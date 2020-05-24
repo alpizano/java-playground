@@ -7,9 +7,14 @@ public class Hello {
             @Override
             public void run() {
                 // Code that will run in new thread
-                System.out.println("We are now in thread: " + Thread.currentThread().getName());
+                System.out.println("We are now in thread: " + Thread.currentThread().getName() + " with priority: " + Thread.currentThread().getPriority());
             }
         });
+
+        t1.setName("My First Thread");
+
+        // Value ranges from 1 to 10 to set static component of dynamic priority dynamically
+        t1.setPriority(Thread.MAX_PRIORITY);
 
          //Using Java8 lambda
         Thread t2 = new Thread(() -> {
