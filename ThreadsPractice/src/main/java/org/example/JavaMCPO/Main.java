@@ -1,6 +1,6 @@
-package org.example;
+package org.example.JavaMCPO;
 
-public class Hello {
+public class Main {
     public static void main(String[] args) throws InterruptedException {
         // Create a new Thread object
         Thread t1 = new Thread(new Runnable() {
