@@ -1,4 +1,4 @@
 package org.example.MasterclassConcurrency;
 
-public class Test {
+public class ThreadJoin {
 }
