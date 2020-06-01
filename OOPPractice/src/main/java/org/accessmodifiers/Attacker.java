@@ -1,4 +1,4 @@
-package org.example;
+package org.accessmodifiers;
 
 public class Attacker {
 

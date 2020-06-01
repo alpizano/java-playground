@@ -1,6 +1,6 @@
-package org.example2;
+package org.accessmodifiers2;
 
-import org.example.Defender;
+import org.accessmodifiers.Defender;
 
 public class OutsideAttacker {
     public static void main(String[] args) {

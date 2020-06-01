@@ -1,4 +1,4 @@
-package org.example;
+package org.accessmodifiers;
 
 public class Defender {
     private String firstName;
@@ -29,6 +29,9 @@ public class Defender {
         Defender defender = new Defender();
 
         defender.printBirthYear();
+        char test = 'A';
+
+        System.out.println(++test);
     }
 
 }
