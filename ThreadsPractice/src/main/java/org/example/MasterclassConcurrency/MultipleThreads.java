@@ -15,6 +15,8 @@ public class MultipleThreads {
 }
 
 class Countdown {
+    private int i;
+
     public void doCountdown() {
         String color;
 
@@ -29,7 +31,7 @@ class Countdown {
                 color = ThreadColor.ANSI_GREEN;
         }
 
-        for (int i = 10; i > 0; i--) {
+        for (i = 10; i > 0; i--) {
             System.out.println(color + Thread.currentThread().getName() + ": i =" + i);
         }
     }
