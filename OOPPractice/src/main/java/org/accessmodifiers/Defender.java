@@ -29,9 +29,6 @@ public class Defender {
         Defender defender = new Defender();
 
         defender.printBirthYear();
-        char test = 'A';
-
-        System.out.println(++test);
     }
 
 }
