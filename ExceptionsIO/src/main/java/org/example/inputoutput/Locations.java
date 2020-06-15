@@ -1,5 +1,7 @@
 package org.example.inputoutput;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -10,6 +12,35 @@ import java.util.Set;
  */
 public class Locations implements Map<Integer, Location> {
     private static Map<Integer, Location> locations = new HashMap<Integer, Location>();
+
+    public static void main(String[] args) {
+
+            FileWriter locFile = null;
+            try {
+                locFile = new FileWriter("locations.txt");
+                for(Location location : locations.values()) {
+                    locFile.write(location.getLocationID() + "," + location.getDescription() + "\n");
+                }
+                throw new IOException("testing exception throw while writing");
+
+            }
+            catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+            finally {
+                System.out.println("In finally block");
+                try {
+                    if(locFile != null) {
+                        // Have to handle IOException causes by attempting to clos stream
+                        locFile.close();
+                    }
+                }
+                catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        }
 
     static {
         Map<String, Integer> tempExit = new HashMap<String, Integer>();

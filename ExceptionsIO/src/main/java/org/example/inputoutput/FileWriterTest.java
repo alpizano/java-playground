@@ -8,8 +8,9 @@ public class FileWriterTest {
     public static void main(String[] args)  {
         FileWriter locFile = null;
         try {
-            locFile = new FileWriter("monkeybone.txt");
+            locFile = new FileWriter("C:\\Users\\KBRV37\\Desktop\\folder\\monkeybone.txt");
             locFile.write("Go to park \n Go to house \n");
+            throw new IOException("testing exception throw while writing");
 
         }
         catch (IOException e) {
