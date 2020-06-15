@@ -28,7 +28,7 @@ public class FileWriterTest {
             }
         }
 
-
+        // Can force exception by creating a folder in /target directory same name of locFile
 
 
     }
