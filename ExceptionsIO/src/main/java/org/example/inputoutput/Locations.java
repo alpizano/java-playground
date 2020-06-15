@@ -1,5 +1,6 @@
 package org.example.inputoutput;
 
+import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -23,8 +24,6 @@ public class Locations implements Map<Integer, Location> {
             }
 
         }
-
-
 
 //            FileWriter locFile = null;
 //            try {
@@ -56,6 +55,7 @@ public class Locations implements Map<Integer, Location> {
     static {
         Scanner scanner = null;
         try {
+            // Scanner will automatically close FileReader
             scanner = new Scanner(new FileReader("locations.txt"));
             scanner.useDelimiter(",");
             while(scanner.hasNextLine()) {
@@ -73,6 +73,32 @@ public class Locations implements Map<Integer, Location> {
         finally {
             if(scanner != null) {
                 scanner.close();
+            }
+        }
+
+        // Now read the exits
+        // Closing Scanner, closes BufferedReader because implements Closeable interface
+        try {
+            scanner = new Scanner(new BufferedReader(new FileReader("directions.txt")));
+            scanner.useDelimiter(",");
+            while (scanner.hasNext()) {
+                int loc = scanner.nextInt();
+                String direction = scanner.next();
+                scanner.skip(scanner.delimiter());
+                String dest = scanner.nextLine();
+                int destination = Integer.parseInt(dest);
+                System.out.println(loc + ": " + direction + ": " + destination);
+                Location location = locations.get(loc);
+                location.addExit(direction, destination);
+            }
+        }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+            finally {
+                if(scanner != null) {
+                    scanner.close();
+                }
             }
         }
 
@@ -103,8 +129,8 @@ public class Locations implements Map<Integer, Location> {
 //        tempExit.put("S", 1);
 //        tempExit.put("W", 2);
 //        locations.put(5, new Location(5, "You are in the forest",tempExit));
+//   }
 
-    }
     @Override
     public int size() {
         return locations.size();
