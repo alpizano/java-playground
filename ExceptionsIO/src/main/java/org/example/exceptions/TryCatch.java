@@ -1,4 +1,4 @@
-package org.example;
+package org.example.exceptions;
 
 import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Hello world!
  *
  */
-public class App 
+public class TryCatch
 {
     public static void main( String[] args )
     {
