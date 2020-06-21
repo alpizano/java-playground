@@ -34,4 +34,10 @@ public class Person {
         firstName = "";
         lastName = "";
     }
+
+    public Person(int age, String firstName, String lastName) {
+        this.age=age;
+        this.firstName=firstName;
+        this.lastName=lastName;
+    }
 }
