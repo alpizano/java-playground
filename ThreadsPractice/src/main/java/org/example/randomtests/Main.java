@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-
         // Read a file
         Thread t1 = new Thread(new Runnable() {
             @Override
@@ -24,11 +23,7 @@ public class Main {
             }
         });
 
-
         t1.start();
-
-
-
 
         //int foo = scanner.nextInt();
 
