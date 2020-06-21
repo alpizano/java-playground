@@ -6,8 +6,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 
-public class App
+public class Main
 {
     public static void main( String[] args ) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
@@ -28,7 +29,13 @@ public class App
          * Json -> Java Object
          */
 
+        // Read in .json file into Java Object
+        Person p3 = objectMapper.readValue(new URL("file:person.json"),Person.class);
+        System.out.println(p3.toString());
 
+        // Read in Json String into Java Object
+        Person p2 = objectMapper.readValue(strP1, Person.class);
+        System.out.println(p2.toString());
 
     }
 }
