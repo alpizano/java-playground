@@ -14,16 +14,32 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Main {
+    public static void something(List list) {
+        System.out.println(list);
+    }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
 
         List<Integer> httpStatusCodes = new ArrayList<>(Arrays.asList(200,400));
-        System.out.println(httpStatusCodes);
+        //System.out.println(httpStatusCodes);
+
+        Main.something(new ArrayList<>(Arrays.asList(69,777)));
+
+
+        if(httpStatusCodes.contains(205)) {
+            System.out.println("Yes");
+        }
+        else {
+            System.out.println("missing");
+        }
 
         CloseableHttpClient httpclient = HttpClients.createDefault();
+
         String url = "https://api.github.com";
         HttpGet httpGet = new HttpGet(url);
+
         CloseableHttpResponse response1 = null;
+
         int attempts = 3;
         int answer = 0;
 
@@ -45,8 +61,25 @@ public class Main {
             finally {
                 response1.close();
             }
+        }
 
+        attempts = 3;
 
+        while(attempts-- > 0) {
+            try {
+                answer = 10/5;
+                if(answer == 1) {
+                    System.out.println("In break");
+                    break;
+                }
+                    System.out.println("Http status code != 200");
+            }
+            catch (Exception e){
+                System.out.println("In catch");
+                System.out.println(e.toString());
+                System.out.println(e.getMessage());
+            }
+            Thread.sleep(5000);
         }
 
 
