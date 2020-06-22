@@ -11,7 +11,7 @@ public class Main {
 
         // Try w/ resources
         // ObjectOutputStream is for serializating Java objects
-        try(ObjectOutputStream out = new FileOutputStream(new BufferedOutputStream(new FileOutputStream("car.dat")))) {
+        try(ObjectOutputStream out = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream("car.dat")))) {
             out.writeObject(car);
         } catch (IOException e) {
             e.printStackTrace();
