@@ -16,20 +16,41 @@ class Message {
 
     // Used by Consumer
     public synchronized String read() {
+        // empty == true, when no message to read
         while(empty) {
+            try {
+                // always call wait() within a loop
+                wait();
+            }
+            catch (InterruptedException e) {
+
+            }
 
         }
+
+        // Conventional to use notifyAll
+        notifyAll();
         empty = true;
         return message;
     }
 
     // Used by Producer
     public synchronized void write(String message) {
+        //
         while(!empty) {
+            try {
+                wait();
+            }
+            catch(InterruptedException e) {
+
+            }
 
         }
+
         empty = false;
         this.message = message;
+        // Conventional to use notifyAll
+        notifyAll();
     }
 }
 
@@ -69,6 +90,7 @@ class Reader implements Runnable {
 
     public void run() {
         Random random = new Random();
+
         for(String latestMessage = message.read(); !latestMessage.equals("Finished");
             latestMessage  = message.read()) {
             System.out.println(latestMessage);
