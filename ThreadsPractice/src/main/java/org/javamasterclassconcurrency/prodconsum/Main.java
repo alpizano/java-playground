@@ -1,4 +1,4 @@
-package org.example.MasterclassConcurrency.prodconsum;
+package org.javamasterclassconcurrency.prodconsum;
 
 import java.util.Random;
 
@@ -17,51 +17,54 @@ class Message {
     // Used by Consumer
     public synchronized String read() {
         // empty == true, when no message to read
+        // read each message before writing another one
         while(empty) {
-            try {
-                // always call wait() within a loop
-                wait();
-            }
-            catch (InterruptedException e) {
-
-            }
+//            try {
+//                // always call wait() within a loop
+//                wait();
+//            }
+//            catch (InterruptedException e) {
+//
+//            }
 
         }
 
-        // Conventional to use notifyAll
-        notifyAll();
+       // Set empty = true to signify message is read
         empty = true;
+        // Conventional to use notifyAll
+//        notifyAll();
         return message;
     }
 
     // Used by Producer
     public synchronized void write(String message) {
-        //
+        // if not empty, loop until empty
         while(!empty) {
-            try {
-                wait();
-            }
-            catch(InterruptedException e) {
-
-            }
+//            try {
+//                wait();
+//            }
+//            catch(InterruptedException e) {
+//
+//            }
 
         }
 
         empty = false;
         this.message = message;
         // Conventional to use notifyAll
-        notifyAll();
+//        notifyAll();
     }
 }
 
 class Writer implements Runnable {
     private Message message;
+
     public Writer(Message message) {
         this.message = message;
     }
 
     public void run() {
-        String[] messages = new String[]{"Humpty Dumpty sat on a wall ",
+        String messages[] = {"Humpty Dumpty sat on a wall ",
                 "Humpty Dumpty had a great fall",
                 "All the king's horses and all the king's men",
                 "Couldn't put Humpty together again"};
@@ -77,8 +80,9 @@ class Writer implements Runnable {
             catch (InterruptedException e) {
 
             }
-            message.write("Finished");
         }
+
+        message.write("Finished");
     }
 }
 

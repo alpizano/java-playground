@@ -1,4 +1,4 @@
-package org.example.MasterclassConcurrency;
+package org.javamasterclassconcurrency;
 
 public class ThreadJoin {
 

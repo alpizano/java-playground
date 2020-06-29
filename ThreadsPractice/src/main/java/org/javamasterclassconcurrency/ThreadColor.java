@@ -1,4 +1,4 @@
-package org.example.MasterclassConcurrency;
+package org.javamasterclassconcurrency;
 
 public class ThreadColor {
     public static final String ANSI_RESET = "\u001B[0m";

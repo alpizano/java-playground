@@ -1,11 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0df2eba2-48c7-4152-a8b2-88e95d693cb2" name="Default Changelist" comment="" />
+    <list default="true" id="0df2eba2-48c7-4152-a8b2-88e95d693cb2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/src/main/java/org/example/HttpRetries/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/src/main/java/org/example/MasterclassConcurrency/MultipleThreads.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThreadsPractice/src/main/java/org/javamasterclassconcurrency/MultipleThreads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/src/main/java/org/example/MasterclassConcurrency/ThreadColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThreadsPractice/src/main/java/org/javamasterclassconcurrency/ThreadColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/src/main/java/org/example/MasterclassConcurrency/ThreadInterrupt.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThreadsPractice/src/main/java/org/javamasterclassconcurrency/ThreadInterrupt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/src/main/java/org/example/MasterclassConcurrency/ThreadJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThreadsPractice/src/main/java/org/javamasterclassconcurrency/ThreadJoin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/src/main/java/org/example/MasterclassConcurrency/prodconsum/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThreadsPractice/src/main/java/org/javamasterclassconcurrency/prodconsum/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/target/classes/org/example/HttpRetries/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/target/classes/org/example/MasterclassConcurrency/Countdown.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/target/classes/org/example/MasterclassConcurrency/CountdownThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/target/classes/org/example/MasterclassConcurrency/MultipleThreads.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/target/classes/org/example/MasterclassConcurrency/ThreadColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/target/classes/org/example/MasterclassConcurrency/ThreadInterrupt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/target/classes/org/example/MasterclassConcurrency/ThreadJoin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/target/classes/org/example/MasterclassConcurrency/prodconsum/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/target/classes/org/example/MasterclassConcurrency/prodconsum/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/target/classes/org/example/MasterclassConcurrency/prodconsum/Reader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThreadsPractice/target/classes/org/example/MasterclassConcurrency/prodconsum/Writer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jackson/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jackson/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jackson/target/classes/META-INF/jackson.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jackson/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jackson/target/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jackson/target/classes/org/example/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jackson/target/classes/org/example/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jackson/target/test-classes/org/example/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jackson/target/test-classes/org/example/AppTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -21,8 +69,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.httpget.Main" />
+      <module name="Http" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.httpget.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.httpretries.Main" />
       <module name="Http" />
@@ -38,6 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -53,28 +117,40 @@
       <option name="presentableId" value="Default" />
       <updated>1592724149061</updated>
       <workItem from="1592724150556" duration="1202000" />
+      <workItem from="1593376640929" duration="1409000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1802" height="233" key="GridCell.Tab.0.bottom" timestamp="1592901900715">
+    <state width="1802" height="233" key="GridCell.Tab.0.bottom" timestamp="1593376860192">
       <screen x="72" y="27" width="1848" height="923" />
     </state>
-    <state width="1802" height="233" key="GridCell.Tab.0.bottom/72.27.1848.923@72.27.1848.923" timestamp="1592901900715" />
-    <state width="1802" height="233" key="GridCell.Tab.0.center" timestamp="1592901900713">
+    <state width="1802" height="233" key="GridCell.Tab.0.bottom/72.27.1848.923@72.27.1848.923" timestamp="1593376860192" />
+    <state width="1802" height="233" key="GridCell.Tab.0.center" timestamp="1593376860191">
       <screen x="72" y="27" width="1848" height="923" />
     </state>
-    <state width="1802" height="233" key="GridCell.Tab.0.center/72.27.1848.923@72.27.1848.923" timestamp="1592901900713" />
-    <state width="1802" height="233" key="GridCell.Tab.0.left" timestamp="1592901900713">
+    <state width="1802" height="233" key="GridCell.Tab.0.center/72.27.1848.923@72.27.1848.923" timestamp="1593376860191" />
+    <state width="1802" height="233" key="GridCell.Tab.0.left" timestamp="1593376860191">
       <screen x="72" y="27" width="1848" height="923" />
     </state>
-    <state width="1802" height="233" key="GridCell.Tab.0.left/72.27.1848.923@72.27.1848.923" timestamp="1592901900713" />
-    <state width="1802" height="233" key="GridCell.Tab.0.right" timestamp="1592901900714">
+    <state width="1802" height="233" key="GridCell.Tab.0.left/72.27.1848.923@72.27.1848.923" timestamp="1593376860191" />
+    <state width="1802" height="233" key="GridCell.Tab.0.right" timestamp="1593376860192">
       <screen x="72" y="27" width="1848" height="923" />
     </state>
-    <state width="1802" height="233" key="GridCell.Tab.0.right/72.27.1848.923@72.27.1848.923" timestamp="1592901900714" />
+    <state width="1802" height="233" key="GridCell.Tab.0.right/72.27.1848.923@72.27.1848.923" timestamp="1593376860192" />
   </component>
 </project>
