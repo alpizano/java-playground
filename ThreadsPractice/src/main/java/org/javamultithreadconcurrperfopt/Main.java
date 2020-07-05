@@ -1,4 +1,4 @@
-package org.example.JavaMCPO;
+package org.javamultithreadconcurrperfopt;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {

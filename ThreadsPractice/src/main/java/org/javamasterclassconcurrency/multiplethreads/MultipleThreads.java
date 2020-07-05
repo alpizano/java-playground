@@ -1,4 +1,6 @@
-package org.javamasterclassconcurrency;
+package org.javamasterclassconcurrency.multiplethreads;
+
+import org.javamasterclassconcurrency.ThreadColor;
 
 public class MultipleThreads {
     public static void main(String[] args) {
