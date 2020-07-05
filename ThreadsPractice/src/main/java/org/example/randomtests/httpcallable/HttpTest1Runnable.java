@@ -10,7 +10,7 @@ import org.apache.http.util.EntityUtils;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-public class HttpTest1 implements Runnable {
+public class HttpTest1Runnable implements Runnable {
     @Override
     public void run() {
 
