@@ -1,4 +1,4 @@
-package org.example.randomtests;
+package org.example.randomtests.testscannerblocking;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
